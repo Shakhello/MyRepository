@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F4C5259-9736-4CDA-9B88-F6F18B3B699F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CMS</RootNamespace>
+    <AssemblyName>CMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\ReOpen\packages\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\ReOpen\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\..\ReOpen\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Behaviours\Action\DownloadFileActionBehaviour.cs" />
+    <Compile Include="Behaviours\Action\DeleteFileActionBehaviour.cs" />
+    <Compile Include="Behaviours\Action\ServiceCallActionBehaviour.cs" />
+    <Compile Include="Behaviours\Action\DeleteDocumentActionBehaviour.cs" />
+    <Compile Include="Behaviours\Action\UploadFileActionBehaviour.cs" />
+    <Compile Include="Behaviours\Action\SearchTicketsWithAutoCompleteBehaviour.cs" />
+    <Compile Include="Behaviours\Action\CreateDocumentActionBehaviour.cs" />
+    <Compile Include="Behaviours\Action\UpdateDocumentActionBehaviour.cs" />
+    <Compile Include="Behaviours\Action\GetSectionSettingsBehaviour.cs" />
+    <Compile Include="Behaviours\Action\GoBackActionBehaviour.cs" />
+    <Compile Include="Behaviours\Action\GotoActionBehaviour.cs" />
+    <Compile Include="Behaviours\Action\SearchActionBehaviour.cs" />
+    <Compile Include="Behaviours\Behaviour.cs" />
+    <Compile Include="Behaviours\Control\AutoCompleteControlBehaviour.cs" />
+    <Compile Include="Behaviours\Control\ButtonControlBehaviour.cs" />
+    <Compile Include="Behaviours\Control\ButtonPageNumberControlBehaviour.cs" />
+    <Compile Include="Behaviours\Control\DefaultControlBehaviour.cs" />
+    <Compile Include="Behaviours\Control\ButtonSearchControlBehaviour.cs" />
+    <Compile Include="Behaviours\Control\LabelControlBehaviour.cs" />
+    <Compile Include="Behaviours\Control\FileControlBehaviour.cs" />
+    <Compile Include="Behaviours\Control\MultiSelectControlBehaviour.cs" />
+    <Compile Include="Behaviours\Control\SectionSettingsButtonBehaviour.cs" />
+    <Compile Include="Behaviours\Control\TableHeaderControlBehaviour.cs" />
+    <Compile Include="Behaviours\Field\DefaultFieldBehaviour.cs" />
+    <Compile Include="Behaviours\Field\DictionaryFieldBehaviour.cs" />
+    <Compile Include="Behaviours\Filter\DefaultFilterBehaviour.cs" />
+    <Compile Include="Behaviours\Filter\MultiSelectFilterBehaviour.cs" />
+    <Compile Include="Behaviours\Interfaces\IActionBehaviour.cs" />
+    <Compile Include="Behaviours\Action\OpenSectionActionBehaviour.cs" />
+    <Compile Include="Behaviours\BehaviourSelector.cs" />
+    <Compile Include="Behaviours\Event\DefaultEventBehaviour.cs" />
+    <Compile Include="Behaviours\Interfaces\IEventBehaviour.cs" />
+    <Compile Include="Behaviours\Interfaces\IFieldBehaviour.cs" />
+    <Compile Include="Behaviours\Interfaces\IFilterBehaviour.cs" />
+    <Compile Include="Behaviours\Interfaces\ISectionBehaviour.cs" />
+    <Compile Include="Behaviours\Interfaces\IViewLinkBehaviour.cs" />
+    <Compile Include="Behaviours\Parameter\DefaultParameterBehaviour.cs" />
+    <Compile Include="Behaviours\Interfaces\IParameterBehaviour.cs" />
+    <Compile Include="Behaviours\Section\DefaultSectionBehaviour.cs" />
+    <Compile Include="Behaviours\ViewLink\DefaultViewLinkBehaviour.cs" />
+    <Compile Include="Behaviours\Interfaces\IViewBehaviour.cs" />
+    <Compile Include="Behaviours\Interfaces\IControlBehaviour.cs" />
+    <Compile Include="Behaviours\View\DefaultViewBehaviour.cs" />
+    <Compile Include="Behaviours\View\HistoryViewBehaviour.cs" />
+    <Compile Include="Behaviours\View\SectionSettingsViewBehaviour.cs" />
+    <Compile Include="Behaviours\View\TableBodyViewBehaviour.cs" />
+    <Compile Include="Behaviours\View\TableCellViewBehaviour.cs" />
+    <Compile Include="Behaviours\View\TableContainerViewBehaviour.cs" />
+    <Compile Include="Behaviours\View\TableFooterViewBehaviour.cs" />
+    <Compile Include="Behaviours\View\TableHeaderViewBehaviour.cs" />
+    <Compile Include="Behaviours\View\TableRecordViewBehaviour.cs" />
+    <Compile Include="Incoming\СopyFieldParameter.cs" />
+    <Compile Include="Incoming\DocumentWithLink.cs" />
+    <Compile Include="Incoming\FileInput.cs" />
+    <Compile Include="Incoming\File.cs" />
+    <Compile Include="Incoming\Document.cs" />
+    <Compile Include="Incoming\TicketLink.cs" />
+    <Compile Include="Proxies\BasketServiceProxy.cs" />
+    <Compile Include="Proxies\IProxyService.cs" />
+    <Compile Include="Proxies\ProxyServiceFactory.cs" />
+    <Compile Include="Proxies\ServiceProxy.cs" />
+    <Compile Include="Resources\RC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RC.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\DataService.cs" />
+    <Compile Include="Services\Service.cs" />
+    <Compile Include="Services\TicketService.cs" />
+    <Compile Include="UI\Definitions\ControlFieldDefinition.cs" />
+    <Compile Include="UI\Definitions\FilterFieldDefinition.cs" />
+    <Compile Include="UI\Definitions\PermissionDefinition.cs" />
+    <Compile Include="UI\Definitions\RoleDefinition.cs" />
+    <Compile Include="UI\Definitions\ServiceCallParameterInOut.cs" />
+    <Compile Include="UI\Definitions\ServiceProxyDefinition.cs" />
+    <Compile Include="UI\Definitions\ServiceProxyParameterDefinition.cs" />
+    <Compile Include="UI\Definitions\UserDefinition.cs" />
+    <Compile Include="UI\Definitions\UserRoleDefinition.cs" />
+    <Compile Include="UI\DefinitionType.cs" />
+    <Compile Include="UI\Enums\ActionType.cs" />
+    <Compile Include="UI\Enums\ControlType.cs" />
+    <Compile Include="UI\Enums\DictionaryType.cs" />
+    <Compile Include="UI\Enums\EventType.cs" />
+    <Compile Include="UI\Enums\FieldType.cs" />
+    <Compile Include="UI\Enums\FilterType.cs" />
+    <Compile Include="UI\Enums\OperationType.cs" />
+    <Compile Include="UI\Enums\ParameterType.cs" />
+    <Compile Include="UI\Enums\PermissionType.cs" />
+    <Compile Include="UI\Enums\SectionType.cs" />
+    <Compile Include="UI\Enums\TemplateType.cs" />
+    <Compile Include="UI\Enums\ViewLinkType.cs" />
+    <Compile Include="UI\Enums\ViewType.cs" />
+    <Compile Include="UI\Instances\Action.cs" />
+    <Compile Include="UI\ActionResult.cs" />
+    <Compile Include="UI\Instances\Control.cs" />
+    <Compile Include="UI\Definitions\ActionDefinition.cs" />
+    <Compile Include="UI\Definitions\ControlDefinition.cs" />
+    <Compile Include="Mapping\UIMapping.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\EditorService.cs" />
+    <Compile Include="UI\Definition.cs" />
+    <Compile Include="UI\Definitions\EventDefinition.cs" />
+    <Compile Include="UI\Definitions\FieldDefinition.cs" />
+    <Compile Include="UI\Definitions\FilterDefinition.cs" />
+    <Compile Include="UI\Definitions\ParameterDefinition.cs" />
+    <Compile Include="UI\Definitions\SectionDefinition.cs" />
+    <Compile Include="UI\Dictionary\DictionaryRecord.cs" />
+    <Compile Include="UI\Instances\Event.cs" />
+    <Compile Include="UI\EventResult.cs" />
+    <Compile Include="UI\Instances\Field.cs" />
+    <Compile Include="UI\Instance.cs" />
+    <Compile Include="UI\Definitions\StyleDefinition.cs" />
+    <Compile Include="UI\Instances\Parameter.cs" />
+    <Compile Include="UI\Instances\Section.cs" />
+    <Compile Include="UI\Instances\View.cs" />
+    <Compile Include="UI\Definitions\DictionaryDefinition.cs" />
+    <Compile Include="UI\Definitions\TemplateDefinition.cs" />
+    <Compile Include="UI\Definitions\ViewDefinition.cs" />
+    <Compile Include="UI\Instances\Filter.cs" />
+    <Compile Include="UI\Instances\ViewLink.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CMS.DAL\CMS.DAL.csproj">
+      <Project>{012C6892-F147-4995-A6FC-F6BCF0195698}</Project>
+      <Name>CMS.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RC.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RC.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

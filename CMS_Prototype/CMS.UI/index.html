@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+* CoreUI Pro - Bootstrap Admin Template
+* @version v2.1.10
+* @link https://coreui.io/pro/
+* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* License (https://coreui.io/pro/license)
+-->
+<html lang="en">
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+  <title>CoreUI Pro Bootstrap Admin Template</title>
+  <!-- Icons-->
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="css/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
+  <link href="css/select2.min.css" rel="stylesheet" />
+  <!-- Main styles for this application-->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/pace.min.css" rel="stylesheet" />
+  <link href="css/jquery.daterangepicker.css" rel="stylesheet" />
+  <link href="css/bootstrap-datepicker.min.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
+  <style>
+
+    .fade-enter-active, .fade-leave-active {
+      transition: opacity .5s;
+    }
+
+    .fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+  <header class="app-header navbar">
+    <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+    </a>
+    <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="nav navbar-nav d-md-down-none">
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">CRM</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">E-commerce</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">Настройки</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto"></ul>
+  </header>
+  <div class="app-body">
+    <sidebar id="sidebar" :block="data"></sidebar>
+    <main class="main">
+      <div class="container-fluid">
+        <page id="page" :block="data"></page>
+      </div>
+    </main>
+  </div>
+  <!-- Bootstrap and necessary plugins-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/pace.min.js"></script>
+  <script src="js/perfect-scrollbar.min.js"></script>
+  <script src="js/coreui.min.js"></script>
+  <script src="js/underscore-min.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/select2.full.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/bootstrap-datepicker.ru.min.js"></script>
+  <script src="js/jquery.daterangepicker.min.js"></script>
+
+  <!-- COMPONENTS -->
+  <script src="js/components/core.js"></script>
+  <script src="js/components/control.js"></script>
+  <script src="js/components/card.js"></script>
+  <script src="js/components/filter.js"></script>
+  <script src="js/components/registry.js"></script>
+  <script src="js/components/sidebar.js"></script>
+  <script src="js/components/table.js"></script>
+  <script src="js/components/tabs.js"></script>
+  <script src="js/components/roles.js"></script>
+  <script src="js/components/file.js"></script>
+  <script src="js/components/date.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
