@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "PikLogin", "PikLogin\PikLogin.njsproj", "{F36C0CEF-EAFE-4221-AC71-45D8D34B9227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PikAPI", "PikAPI\PikAPI.csproj", "{3FBBD186-9361-4AC0-8E07-E2FCD588BD40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F36C0CEF-EAFE-4221-AC71-45D8D34B9227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F36C0CEF-EAFE-4221-AC71-45D8D34B9227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F36C0CEF-EAFE-4221-AC71-45D8D34B9227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F36C0CEF-EAFE-4221-AC71-45D8D34B9227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FBBD186-9361-4AC0-8E07-E2FCD588BD40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FBBD186-9361-4AC0-8E07-E2FCD588BD40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FBBD186-9361-4AC0-8E07-E2FCD588BD40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FBBD186-9361-4AC0-8E07-E2FCD588BD40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C16FA95E-EAC1-4FB0-B409-0D27B7F932D7}
+	EndGlobalSection
+EndGlobal
